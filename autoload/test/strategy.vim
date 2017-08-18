@@ -46,7 +46,7 @@ function! test#strategy#neovim(cmd) abort
   botright new
   call termopen(a:cmd . opts.suffix, opts)
   au BufDelete <buffer> wincmd p
-  startinsert
+  " startinsert
 endfunction
 
 function! test#strategy#neoterm(cmd) abort
